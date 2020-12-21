@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin | Ceramika</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Ceramica Admin</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <h1>
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"> </span> Sales Executive
+            </h1>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- BREADCRUMB -->
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active">Dashboard</li>
+            </ol>
+        </div>
+    </section>
+    <!-- END BREADCRUMB -->
+
+    <!-- MAIN AREA -->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <!-- SIDE NAVBAR -->
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="index.html" class="list-group-item">
+                            Dashboard
+                        </a>
+                        <a href="add_new_tile.html" class="list-group-item main-color-bg">
+                            Add new Tile
+                        </a>
+                        <a href="remove_tile.html" class="list-group-item">
+                            Remove Tile
+                        </a>
+                        <a href="add_new_category.html" class="list-group-item">
+                            Add new Category
+                        </a>
+                        <a href="add_new_sub_category.html" class="list-group-item">
+                            Add new Sub-Category
+                        </a>
+                        <a href="manage_stock.html" class="list-group-item">
+                            Manage Stock
+                        </a>
+                        <a href="custom_tile_list.html" class="list-group-item">
+                            Requests for custom tiles
+                        </a>
+                        <a href="orders.html" class="list-group-item">
+                            All Orders
+                        </a>
+                    </div>
+                </div>
+                <!-- MAIN MIDDLE AREA -->
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <form>
+                            <div class="panel-heading main-color-bg">
+                                <h4 class="panel-title">
+                                    <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp; Add New Tile
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row mb-10">
+                                    <div class="col-md-2">
+                                        <label for="tiles_name" class="control-label">Tile Name</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="tiles_name" />
+                                    </div>
+                                </div>
+                                <div class="row mb-10">
+                                    <div class="col-md-2">
+                                        <label for="category" class="control-label">Category</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select id="category" class="form-control">
+                                            <option>Wall tiles</option>
+                                            <option>floor tiles</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="sub_category" class="control-label">Sub Category</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select id="sub_category" class="form-control">
+                                            <option>Glossy tiles</option>
+                                            <option>Matt tiles</option>
+                                            <option>Wood tiles</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-10">
+                                    <div class="col-md-2">
+                                        <label for="size" class="control-label">Size</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select id="size" class="form-control">
+                                            <option>600 * 600</option>
+                                            <option>800 * 800</option>
+                                            <option>1000 * 1000</option>
+                                            <option>1200 * 1000</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="no_of_tiles_per_box" class="control-label">Number of tiles per
+                                            box</label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select id="no_of_tiles_per_box" class="form-control">
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>15</option>
+                                            <option>20</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-10">
+                                    <div class="col-md-2">
+                                        <label for="tile_image" class="control-label">Image</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="custom-file">
+                                            <input type="file" id="tile_image">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="weight_per_box" class="control-label">Weight per box</label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" id="weight_per_box" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row mb-10">
+                                    <div class="col-md-2">
+                                        <label for="stock" class="control-label">Stock</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" id="stock" class="form-control" />
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="price" class="control-label">Price</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" id="price" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer text-right">
+                                <input type="submit" class="btn main-color-bg" value="Create" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END MAIN AREA -->
+
+    <script type="text/javscript" src="http://getbootstrap.com/assets/js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

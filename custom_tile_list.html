@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin | Ceramika</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Ceramica Admin</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <h1>
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"> </span> Sales Executive
+            </h1>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- BREADCRUMB -->
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active">Dashboard</li>
+            </ol>
+        </div>
+    </section>
+    <!-- END BREADCRUMB -->
+
+    <!-- MAIN AREA -->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <!-- SIDE NAVBAR -->
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="index.html" class="list-group-item">
+                            Dashboard
+                        </a>
+                        <a href="add_new_tile.html" class="list-group-item">
+                            Add new Tile
+                        </a>
+                        <a href="remove_tile.html" class="list-group-item">
+                            Remove Tile
+                        </a>
+                        <a href="add_new_category.html" class="list-group-item">
+                            Add new Category
+                        </a>
+                        <a href="add_new_sub_category.html" class="list-group-item">
+                            Add new Sub-Category
+                        </a>
+                        <a href="manage_stock.html" class="list-group-item">
+                            Manage Stock
+                        </a>
+                        <a href="custom_tile_list.html" class="list-group-item main-color-bg">
+                            Requests for custom tiles
+                        </a>
+                        <a href="orders.html" class="list-group-item">
+                            All Orders
+                        </a>
+                    </div>
+                </div>
+                <!-- MAIN MIDDLE AREA -->
+                <div class="col-md-9">
+                    <!-- SYSTEM OVERVIEW -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title">
+                                <span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;&nbsp;Custome tiles
+                                requests
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <table border="0" class="table table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <td><b>Request Title</b></td>
+                                        <td><b>User Name</b></td>
+                                        <td><b>Size</b></td>
+                                        <td><b>No of tiles</b></td>
+                                        <td><b>Status</b></td>
+                                        <td><b>Actions</b></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>My request</td>
+                                        <td>N3o</td>
+                                        <td>1000*800*5</td>
+                                        <td>500</td>
+                                        <td>New</td>
+                                        <td>
+                                            <a href="custom_tile_details.html">
+                                                <input type="button" class="btn main-color-bg" value="Details" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END MAIN AREA -->
+
+    <script type="text/javscript" src="http://getbootstrap.com/assets/js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
